@@ -12,6 +12,8 @@ namespace Scramble
     {
         static void Main(string[] args)
         {
+            var line = Console.ReadLine();
+
             Console.WriteLine("Hello World!");
         }
 
@@ -20,7 +22,7 @@ namespace Scramble
         /// </summary>
         /// <param name="str">The string to be 'encoded'</param>
         /// <returns>a string (possibly string array)</returns>
-        public string Encode(string[] str)
+        public string Encode(string str)
         {
             return String.Empty;
         }

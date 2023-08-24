@@ -1,0 +1,15 @@
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\bin\Debug\net6.0\LeetScramble.exe
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\bin\Debug\net6.0\LeetScramble.deps.json
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\bin\Debug\net6.0\LeetScramble.runtimeconfig.json
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\bin\Debug\net6.0\LeetScramble.dll
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\bin\Debug\net6.0\LeetScramble.pdb
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.csproj.AssemblyReference.cache
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.AssemblyInfoInputs.cache
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.AssemblyInfo.cs
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.csproj.CoreCompileInputs.cache
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.dll
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\refint\LeetScramble.dll
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.pdb
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\LeetScramble.genruntimeconfig.cache
+C:\Users\Cameron\source\repos\LeetSpeakScramble\LeetScramble\obj\Debug\net6.0\ref\LeetScramble.dll

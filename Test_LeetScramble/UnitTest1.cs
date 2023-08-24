@@ -15,7 +15,7 @@ namespace Scramble.nUnitTests
         [Test]
         public void Encode_EqualTest()
         {
-            string[] line = { "It", "was", "many", "and", "many", "a", "year", "ago" };
+            string line = "It was many and many a year ago";
             string expected = "I0t w1s m2y a1d m2y a y2r a1o";
 
             string encodedLine = _ls.Encode(line);
