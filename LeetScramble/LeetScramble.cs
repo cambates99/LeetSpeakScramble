@@ -12,8 +12,11 @@ namespace Scramble
 {
     public class LeetScramble
     {
+        // Regular expression pattern for seperating alphabetic and non-alphabetic sequences
+        private const string Pattern = @"([a-zA-Z]+|[^a-zA-Z']+)";
+
         /// <summary>
-        /// allows for multiple inputs via the comand line
+        /// Allows for multiple inputs via the comand line
         /// </summary>
         /// <param name="args">inputed string from console</param>
         static void Main(string[] args)
@@ -24,25 +27,25 @@ namespace Scramble
             while(true)
             {
                 line = Console.ReadLine();
-                if (line != string.Empty)
+                if (!string.IsNullOrEmpty(line))
                 {
-                    ls.Encode(line);
+                    string encoded = ls.Encode(line);
+                    Display(encoded);
                 }
             }
         }
 
         /// <summary>
-        /// Transcribes each word in a string such that it has the first letter, number of characters, and last letter. i.e. hellow, world -> h3w, w3d 
+        /// Transcribes each word in a string such that it has the first letter, number of characters, and last letter. i.e. hello, world -> h2w, w3d 
         /// </summary>
         /// <param name="input">The string to be 'encoded'</param>
         /// <returns>the transcribed string</returns>
         public string Encode(string input)
         {
-            string pattern = @"(\w+|[^a-zA-Z]+)";
-            Regex regex = new Regex(pattern);
-
+            Regex regex = new Regex(Pattern);
             string replaced = regex.Replace(input, match => ReplaceMatch(match));
-            return Display(replaced);
+
+            return replaced;
         }
 
         /// <summary>
@@ -54,7 +57,7 @@ namespace Scramble
         {
             string value = match.Value;
 
-            if (char.IsLetter(value[0]))
+            if (char.IsLetter(value[0])) // could do value.Any(char.IsLetter)
             {
                 if (value.Length == 1)
                 {
@@ -100,10 +103,9 @@ namespace Scramble
         /// Displays the transcribed line
         /// </summary>
         /// <param name="str">the string that has been transcribed</param>
-        private string Display(string str)
+        private static void Display(string str)
         {
             Console.WriteLine("Transcribed Line: " + str);
-            return str;
         }
     }
 }

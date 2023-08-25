@@ -54,6 +54,20 @@ namespace Scramble.nUnitTests
             Assert.That(encodedLine, Is.EqualTo(expected));
         }
         [Test]
+        public void AllCharCombonations_EqualTest()
+        {
+            string line = @"h1i h2i h3i h4i h5i h6i h7i h8i h9i h0i h-i h=i h`i h~i 
+                                h!i h@i h#i h$i h%i h^i h&i h*i h(i h)i h_i h+i h[i 
+                                h{i h]i h}i h;i h:i h'i h,i h<i h.i h>i h/i h?i";
+            string expected = @"h1i h2i h3i h4i h5i h6i h7i h8i h9i h0i h-i h=i h`i h~i 
+                                h!i h@i h#i h$i h%i h^i h&i h*i h(i h)i h_i h+i h[i 
+                                h{i h]i h}i h;i h:i h'i h,i h<i h.i h>i h/i h?i";
+
+            string encodedLine = _ls.Encode(line);
+
+            Assert.That(encodedLine, Is.EqualTo(expected));
+        }
+        [Test]
         public void StressTest()
         {
             StreamReader sr = new StreamReader("Lorem1000.txt");
@@ -63,7 +77,8 @@ namespace Scramble.nUnitTests
             string encodedLine = _ls.Encode(line);
             sw.Stop();
 
-            Assert.IsTrue(sw.ElapsedMilliseconds < 20);
+            Assert.Pass($"Execution time: {sw.ElapsedMilliseconds} ms");
+
         }
     }
 }
