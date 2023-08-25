@@ -12,6 +12,10 @@ namespace Scramble
 {
     public class LeetScramble
     {
+        /// <summary>
+        /// allows for multiple inputs via the comand line
+        /// </summary>
+        /// <param name="args">inputed string from console</param>
         static void Main(string[] args)
         {
             LeetScramble ls = new LeetScramble();
@@ -28,10 +32,10 @@ namespace Scramble
         }
 
         /// <summary>
-        /// Creates a string that replaces...
+        /// Transcribes each word in a string such that it has the first letter, number of characters, and last letter. i.e. hellow, world -> h3w, w3d 
         /// </summary>
         /// <param name="input">The string to be 'encoded'</param>
-        /// <returns>a string (possibly string array)</returns>
+        /// <returns>the transcribed string</returns>
         public string Encode(string input)
         {
             string pattern = @"(\w+|[^a-zA-Z]+)";
@@ -59,6 +63,10 @@ namespace Scramble
                 else if (value.Length == 2)
                 {
                     return $"{value[0]}{"0"}{value[value.Length - 1]}";
+                }
+                else if (value.Length == 3)
+                {
+                    return $"{value[0]}{"1"}{value[value.Length - 1]}";
                 }
                 else
                 {
