@@ -9,4 +9,4 @@ Summary
 Results
 	Due to the use of the char HashSet, Regex pattern, and early returns
 	the program functions reasonably well. It was able to translate 
-	1000 words in ~12ms. All other tests indicate a perfect accuracy.
+	1000 words in ~6ms. All other tests indicate a perfect accuracy.
