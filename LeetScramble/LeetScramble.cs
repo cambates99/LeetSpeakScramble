@@ -13,7 +13,7 @@ namespace Scramble
     public class LeetScramble
     {
         /// <summary>
-        /// allows for multiple inputs via the comand line
+        /// Allows for multiple inputs via the comand line
         /// </summary>
         /// <param name="args">inputed string from console</param>
         static void Main(string[] args)
@@ -32,7 +32,7 @@ namespace Scramble
         }
 
         /// <summary>
-        /// Transcribes each word in a string such that it has the first letter, number of characters, and last letter. i.e. hellow, world -> h3w, w3d 
+        /// Transcribes each word in a string such that it has the first letter, number of characters, and last letter. i.e. hello, world -> h2w, w3d 
         /// </summary>
         /// <param name="input">The string to be 'encoded'</param>
         /// <returns>the transcribed string</returns>
